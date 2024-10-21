@@ -4,106 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIST Cloud Computing Standards Roadmap</title>
-    <link rel="stylesheet" href="PaginaWebBazar\styles.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f3fc;
+            color: #333;
+        }
+
+        .slider {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide {
+            min-width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            color: #fff;
+        }
+
+        h1, h2, h3 {
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        #Banner {
+            font-size: 3em; /* Aumentar tamaño */
+            font-weight: bold;
+        }
+
+        #capitulos, #integrantes, #nombres, #resumen {
+            font-size: 2em; /* Aumentar tamaño */
+            margin: 10px 0;
+        }
+
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .button {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 2em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        /* Efecto de desvanecimiento en las diapositivas */
+        .fade {
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
 
     <div class="slider">
         <div class="slides">
-            <div class="slide" style="background-image: url('https://ayudaleyprotecciondatos.es/wp-content/uploads/2020/10/cloud-computing-00.jpg');">
+            <div class="slide fade" style="background-image: url('https://ayudaleyprotecciondatos.es/wp-content/uploads/2020/10/cloud-computing-00.jpg');">
                 <h1 id="Banner">NIST Cloud Computing <br> Standards Roadmap</h1>
-                <h1 id="capitulos">Capítulos 1, 2 y 3</h1>
+                <h2 id="capitulos">Capítulos 1, 2 y 3</h2>
                 <p id="integrantes">Integrantes:</p>
-                <p id="nombres">Cristina Molina <br>Jair Sanchez <br> Dylan Villarroel <br> Alan Molina</p>
+                <p id="nombres">Cristina Molina <br>Jair Sanchez <br>Dylan Villarroel <br>Alan Molina</p>
             </div>
-            <div class="slide" style="background-image: url('https://media.licdn.com/dms/image/v2/D5612AQHctl-4IzsG8A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721199849761?e=2147483647&v=beta&t=z1jlFHz6DxZtXTS1535r2qxDman6I1Juklcuip-NEvY');">
+            <div class="slide fade" style="background-image: url('https://media.licdn.com/dms/image/v2/D5612AQHctl-4IzsG8A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721199849761?e=2147483647&v=beta&t=z1jlFHz6DxZtXTS1535r2qxDman6I1Juklcuip-NEvY');">
                 <h2 id="Banner">1) RESUMEN GENERAL</h2>
-                <p id="resumen">El <b>NIST</b> ha sido encargado de acelerar la adopción segura de la computación en la nube en el gobierno federal. En colaboración con la industria y organizaciones de estándares, NIST desarrolla guías para asegurar la interoperabilidad y seguridad en la nube, evitando riesgos de obsolescencia tecnológica. El<b> USG Cloud Computing Technology Roadmap </b> fue creado para reducir costos y mejorar servicios en el gobierno, estableciendo estándares que faciliten la migración y el uso eficiente de la nube.</p>
+                <p id="resumen">El <b>NIST</b> ha sido encargado de acelerar la adopción segura de la computación en la nube en el gobierno federal. En colaboración con la industria y organizaciones de estándares, NIST desarrolla guías para asegurar la interoperabilidad y seguridad en la nube, evitando riesgos de obsolescencia tecnológica. El <b>USG Cloud Computing Technology Roadmap</b> fue creado para reducir costos y mejorar servicios en el gobierno, estableciendo estándares que faciliten la migración y el uso eficiente de la nube.</p>
             </div>
-            <div class="slide" style="background-image: url('https://media.licdn.com/dms/image/v2/D5612AQHctl-4IzsG8A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721199849761?e=2147483647&v=beta&t=z1jlFHz6DxZtXTS1535r2qxDman6I1Juklcuip-NEvY');">
-                <h2 id="Banner"></h2>
+            <div class="slide fade" style="background-image: url('https://media.licdn.com/dms/image/v2/D5612AQHctl-4IzsG8A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721199849761?e=2147483647&v=beta&t=z1jlFHz6DxZtXTS1535r2qxDman6I1Juklcuip-NEvY');">
+                <h2 id="Banner">Brechas en estándares</h2>
                 <p id="resumen">El <b>NIST Cloud Computing Standards Roadmap Working Group</b> ha evaluado los estándares actuales, identificando vacíos en interoperabilidad, portabilidad y seguridad. También ha desarrollado una arquitectura de referencia para facilitar la comprensión de los estándares necesarios. Se han encontrado brechas en áreas como interfaces de SaaS, PaaS, seguridad y privacidad, mientras que muchos estándares previos siguen siendo útiles para la nube.<br><br>Con el avance de la tecnología, nuevas organizaciones están desarrollando estándares específicos para la nube. NIST mantiene un inventario actualizado de estándares relevantes, alineado con las necesidades del gobierno federal.</p>
             </div>
-            <div class="slide" style="background-image: url('https://media.licdn.com/dms/image/v2/D5612AQHctl-4IzsG8A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721199849761?e=2147483647&v=beta&t=z1jlFHz6DxZtXTS1535r2qxDman6I1Juklcuip-NEvY');">
-                <h2 id="Banner">Recomendaciones:</h2>
-                <p id="resumen">- Contribuir con los requisitos de las agencias.<br>- Participar en el desarrollo de estándares.<br>- Fomentar las Pruebas para acelerar las implementaciones basadas en estándares técnicamente sólidos.<br>- Especificar estándares de computación en la nube.<br>- Promover el uso de estándares a nivel federal.</p>
-            </div>
-            <div class="slide" style="background-image: url('https://img.freepik.com/vector-premium/fondo-tecnologia-conexion-nube-abstracta_43778-622.jpg');">
+            <div class="slide fade" style="background-image: url('https://img.freepik.com/vector-premium/fondo-tecnologia-conexion-nube-abstracta_43778-622.jpg');">
                 <h2 id="Banner">2) INTRODUCCIÓN</h2>
                 <h3 id="Banner">2.1) Antecedentes</h3>
-                <p id="resumen">Las leyes de EE.UU. requieren que las agencias federales utilicen estándares internacionales <br> y de consenso voluntario en sus actividades de contratación y regulación. NIST, como parte <br> de este esfuerzo, lanzó el Programa de Computación en la Nube en 2010 para apoyar la <br>  adopción de modelos en la nube por parte del gobierno federal.</p>
+                <p id="resumen">Las leyes de EE.UU. requieren que las agencias federales utilicen estándares internacionales <br> y de consenso voluntario en sus actividades de contratación y regulación. NIST, como parte <br> de este esfuerzo, lanzó el Programa de Computación en la Nube en 2010 para apoyar la <br> adopción de modelos en la nube por parte del gobierno federal.</p>
             </div>
-            <div class="slide" style="background-image: url('https://icorp.com.mx/wp-content/uploads/2015/05/%C2%BFQue-es-la-nube-informatica_-scaled.webp');">
+            <div class="slide fade" style="background-image: url('https://icorp.com.mx/wp-content/uploads/2015/05/%C2%BFQue-es-la-nube-informatica_-scaled.webp');">
                 <h2 id="Banner">2.2) VISIÓN DE LA <br> COMPUTACIÓN EN LA <br>NUBE DEL NIST</h2>
-                <p id="resumen">NIST busca liderar la adopción del paradigma de la computación <br> en la nube, promoviendo su uso en la industria y el gobierno. El <br>enfoque se centra en la interoperabilidad, portabilidad y seguridad, <br> asegurando que estas prácticas sean consistentes y realizables en <br> diversos escenarios de uso.</p>
+                <p id="resumen">NIST busca liderar la adopción del paradigma de la computación <br> en la nube, promoviendo su uso en la industria y el gobierno. El <br> enfoque se centra en la interoperabilidad, portabilidad y seguridad, <br> asegurando que estas prácticas sean consistentes y realizables en <br> diversos escenarios de uso.</p>
             </div>
-            <div class="slide" style="background-image: url('https://blog.setisl.com/wp-content/uploads/2020/05/qu%C3%A9-es-la-nube-de-almacenamiento-en-internet-770x400@2x.jpg');">
+            <div class="slide fade" style="background-image: url('https://blog.setisl.com/wp-content/uploads/2020/05/qu%C3%A9-es-la-nube-de-almacenamiento-en-internet-770x400@2x.jpg');">
                 <h2 id="Banner">2.3) GRUPO DE TRABAJO DE LA <br> HOJA DE RUTA DE NORMAS DE <br> COMPUTACIÓN EN LA NUBE DEL NIST</h2>
-                <p id="resumen">El grupo de trabajo de NIST ha estudiado los estándares existentes <br>y emergentes, identificando prioridades y brechas en los estándares <br> de interoperabilidad, rendimiento, portabilidad y seguridad en la <br> computación en la nube.</p>
+                <p id="resumen">El grupo de trabajo de NIST ha estudiado los estándares existentes <br> y emergentes, identificando prioridades y brechas en los estándares <br> de interoperabilidad, rendimiento, portabilidad y seguridad en la <br> computación en la nube.</p>
             </div>
-            <div class="slide" style="background-image: url('https://img.freepik.com/vector-premium/tecnologia-computacion-nube-internet-concepto-tecnologia-cibernetica-vector-e-ilustracion_974730-165.jpg');">
-                <h2 id="Banner">2.4) PRODUCCIÓN DEL<BR> INFORME</h2>
+            <div class="slide fade" style="background-image: url('https://img.freepik.com/vector-premium/tecnologia-computacion-nube-internet-concepto-tecnologia-cibernetica-vector-e-ilustracion_974730-165.jpg');">
+                <h2 id="Banner">2.4) PRODUCCIÓN DEL <br> INFORME</h2>
                 <p id="resumen">Este informe fue elaborado mediante una encuesta <br> sobre los estándares actuales y emergentes en la <br> computación en la nube, en colaboración con grupos <br> de trabajo del NIST y otras organizaciones.</p>
             </div>
-            <div class="slide" style="background-image: url('https://img.freepik.com/vector-premium/concepto-computacion-nube_43778-430.jpg');">
-                <h1 id="Banner"> 3)Definición del NIST <br> sobre Computación en la Nube</h1>
-                <p>La computación en la nube es un modelo que permite el acceso omnipresente, conveniente <br> y bajo demanda a un conjunto compartido de recursos configurables, como redes, servidores,<br> almacenamiento y aplicaciones, que pueden ser rápidamente provisionados con un mínimo <br> esfuerzo de gestión. Este modelo incluye cinco características esenciales:</p>
-                <ul>
-                    <li><strong>Auto-servicio bajo demanda:</strong> El usuario puede provisionar recursos computacionales <br> según se necesiten, sin intervención humana del proveedor.</li>
-                    <li><strong>Acceso amplio a la red:</strong> Los recursos están disponibles a través de la red y pueden <br> ser accedidos por dispositivos heterogéneos.</li>
-                    <li><strong>Agrupación de recursos:</strong> Los recursos del proveedor se agrupan y asignan <br> dinámicamente a múltiples usuarios.</li>
-                    <li><strong>Elasticidad rápida:</strong> Los recursos pueden ser provisionados y liberados rápidamente <br> para adaptarse a la demanda.</li>
-                    <li><strong>Servicio medido:</strong> Los recursos utilizados se controlan y miden para proporcionar <br> transparencia tanto al proveedor como al usuario.</li>
-                </ul>
-            </div>
-            
-            <div class="slide" style="background-image: url('https://img.freepik.com/vector-premium/tecnologia-nube-moderna-futurista-almacenamiento-linea-trabajo-casa_184920-74.jpg');">
-                <h1 id="Banner">Modelos de Servicio</h1>
-                <ul id="resumen">
-                    <li><strong>Software como Servicio (SaaS):</strong> El usuario utiliza aplicaciones <br> que están en la nube sin gestionar la infraestructura subyacente.</li>
-                    <li><strong>Plataforma como Servicio (PaaS):</strong> El usuario puede desplegar <br> sus propias aplicaciones, pero no gestiona la infraestructura subyacente.</li>
-                    <li><strong>Infraestructura como Servicio (IaaS):</strong> El usuario gestiona la <br>  infraestructura de hardware virtual, incluyendo almacenamiento y procesamiento.</li>
-                </ul>
-            </div>
-
-            <div class="slide" style="background-image: url('https://img.freepik.com/vector-premium/tecnologia-nube-moderna-almacenamiento-linea-futurista-trabajo-casa_184920-453.jpg');">
-                <h1 id="Banner">Modelos de Despliegue</h1>
-                <ul id="resumen">
-                    <li><strong>Nube privada:</strong> Infraestructura utilizada por una <br>sola organización.</li>
-                    <li><strong>Nube comunitaria:</strong> Infraestructura compartida <br>por varias organizaciones con objetivos comunes.</li>
-                    <li><strong>Nube pública:</strong> Infraestructura disponible para el<br> público en general.</li>
-                    <li><strong>Nube híbrida:</strong> Combinación de dos o más <br>infraestructuras que permanecen únicas pero están<br> unidas por tecnología estándar.</li>
-                </ul>
-            </div>
-            <div class="slide" style="background-image: url('https://img.freepik.com/vector-premium/concepto-innovacion-servicios-datos-digitales-fondo-tecnologia-almacenamiento-computacion-nube_42421-1343.jpg');">
-                <h1 id="Banner">Priorización y Estándares</h1>
-                <p id="resumen">NIST ha identificado varias áreas prioritarias donde existen <br> brechas en los estándares, como la gestión de interfaces en <br> SaaS, PaaS y el soporte de seguridad y privacidad. NIST <br>recomienda que las agencias federales participen activamente <br> en el desarrollo de estos estándares, contribuyendo con requisitos <br>claros, participando en proyectos de desarrollo de estándares y <br>promoviendo la interoperabilidad y conformidad técnica.</p>
+            <div class="slide fade" style="background-image: url('https://c8.alamy.com/compes/m94d77/abstract-digital-cloud-computing-concept-background-vector-illustration-m94d77.jpg');">
+                <h2 id="Banner">3) OBJETIVOS DE LA HOJA DE RUTA</h2>
+                <p id="resumen">El objetivo principal es fomentar la adopción de estándares <br> de computación en la nube en el gobierno federal y la industria, <br> garantizando la interoperabilidad y seguridad de las soluciones <br> en la nube.</p>
             </div>
         </div>
         <div class="controls">
-            <button class="button" id="prevBtn">&#10094;</button>
-            <button class="button" id="nextBtn">&#10095;</button>
+            <button class="button" onclick="prevSlide()">&#10094;</button>
+            <button class="button" onclick="nextSlide()">&#10095;</button>
         </div>
     </div>
 
     <script>
         let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        const totalSlides = slides.length;
+        const slides = document.querySelector('.slides');
 
-        document.getElementById('nextBtn').addEventListener('click', () => {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            updateSlides();
-        });
+        function showSlide(index) {
+            const totalSlides = document.querySelectorAll('.slide').length;
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
 
-        document.getElementById('prevBtn').addEventListener('click', () => {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            updateSlides();
-        });
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
 
-        function updateSlides() {
-            const slidesContainer = document.querySelector('.slides');
-            slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+        function prevSlide() {
+            showSlide(currentSlide - 1);
         }
     </script>
 </body>
