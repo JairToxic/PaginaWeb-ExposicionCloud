@@ -16,6 +16,7 @@ body {
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    width: 100%; /* Modifica esta línea */
     height: 100%; /* Altura completa */
 }
 
